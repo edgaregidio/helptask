@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 
 import AuthRoutes from './auth.routes'
 
-const Routes = () => {
+const Routes = ({ theme }) => {
   return (
     <NavigationContainer>
       <AuthRoutes />
