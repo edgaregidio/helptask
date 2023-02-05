@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
+import { Text, View } from 'react-native'
 
 import FooterButton from '../../../components/Controllers/FooterButton'
 import Button from '../../../components/Controllers/Button'
 import Input from '../../../components/Controllers/Input'
-import { Form, Title, Footer } from './styles'
+import { Footer, Form, Title } from './styles'
 
 const SignInForm = () => {
   const [email, setEmail] = useState('')
@@ -24,7 +25,6 @@ const SignInForm = () => {
       <Input placeholder="E-mail" onChangeText={setEmail} />
       <Input placeholder="Senha" secureTextEntry onChangeText={setPassword} />
       <Button title="Entrar" onPress={handleSignIn} isLoading={isLoading} />
-
       <Footer>
         <FooterButton
           title="Criar conta"
