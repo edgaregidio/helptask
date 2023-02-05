@@ -6,11 +6,11 @@ import Register from '../screens/Register'
 
 const { Navigator, Screen } = createNativeStackNavigator()
 
-const AuthRoutes = ({ theme }) => {
+const AuthRoutes = () => {
   return (
     <Navigator screenOptions={{ headerShown: false }}>
-      <Screen name="signIn" component={SignIn} initialParams={{ theme }} />
       <Screen name="register" component={Register} />
+      <Screen name="signIn" component={SignIn} />
     </Navigator>
   )
 }
